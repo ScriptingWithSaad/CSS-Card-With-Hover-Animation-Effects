@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+
+.main-card {
+    width: 80%;
+    height: 100vh;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.main-card .card {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+}
+
+.main-card .card .img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-card .card .img img {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.main-card .card .content {
+    position: relative;
+    width: 50%;
+}
+
+.main-card .card .content h1 {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.main-card .card .content h1 span {
+    color: red;
+}
+
+.main-card .card .content .pra {
+    color: #fff;
+}
+
+.main-card .card .content button {
+    background: none;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 3px 20px;
+    margin: 10px 0px 2px 0px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-card .card .content button:hover {
+    border: 2px solid #fff;
+    color: red;
+}
+
+.main-card .card .content .social-icon {
+    padding: 10px 0px;
+}
+
+.main-card .card .content .social-icon a {
+    padding: 0px 5px;
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-card .card .content .social-icon a:hover {
+    color: #fff;
+}
+
+@media (max-width:480px) {
+    .main-card .card .content button {
+        padding: 2px 11px;
+    }
+    .main-card .card .content .pra {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:375px) {
+    .main-card .card .img:hover img {
+        width: 35%;
+    }
+}
+
+@media (max-width:450px) {
+    .main-card .card .content button {
+        padding: 2px 10px;
+    }
+    .main-card .card .content .pra {
+        font-size: 9px;
+    }
+}
+
+.main-card .card-2 .img img {
+    width: 48%;
+}
